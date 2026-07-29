@@ -6,18 +6,18 @@ We build high-performance, modular machine learning engines leveraging accelerat
 
 ## 🛠️ Core Repositories
 
-### 🧠 [NNEngine](https://github.com/mlengineproject/nnengine)
+### 🧠 [NNEngine](https://github.com/AffineFlow/nnengine)
 A lightweight but comprehensive C++ neural network computing engine featuring a native autograd tracking subsystem.
 * **Architecture:** Fully custom implementation of foundational operations like `MatMulOp`, `ReLUOp`, and `LeakyReLUOp` managed via an operational tape system.
 * **Components:** Includes core dense layers, standard optimizers (`SGD`, `Adam`), and loss trackers (`MSELoss`, `SoftmaxCrossEntropyLoss`).
 * **Bindings:** Compiles cleanly into optimized C++ executables via CMake and exports directly to Python APIs using a customized `binding.cpp` architecture.
 
-### 📐 [KNNEngine](https://github.com/mlengineproject/knnengine)
+### 📐 [KNNEngine](https://github.com/AffineFlow/knnengine)
 A high-performance C++ engine dedicated to vectorized neighborhood classification and structural data reduction.
 * **Features:** Built-in matrix-driven Principal Component Analysis (`PCA.cpp`) alongside fast $K$-Nearest Neighbors classification pipelines (`KNN.cpp`).
 * **Tooling:** Features deep system level building supported by multi-platform `CMakePresets.json` layouts and automated native distribution pipelines.
 
-### 🎛️ [MLEngine](https://github.com/mlengineproject/mlengine)
+### 🎛️ [MLEngine](https://github.com/AffineFlow/affineflow)
 The central high-level staging ground that orchestrates multiple machine learning models and operational tasks under one coherent module layout.
 * **Integrations:** Smoothly wraps complex structures into clean Python modules (`knn.py` and `nn.py`) designed for production prototyping.
 
